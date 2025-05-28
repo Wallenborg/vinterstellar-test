@@ -1,0 +1,76 @@
+/* gör containern fullstab och bakomliggande Cesium */
+.cesium-container {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  
+
+  .satellite-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+  }
+  
+
+  .back-btn {
+    position: absolute; top: 1rem; left: 1rem;
+    background: none; border: none;
+    color: var(--text-light); font-family: 'Orbitron'; font-size: 1rem;
+    cursor: pointer; z-index: 100;
+  }
+  
+
+  #loadingOverlay {
+    position: absolute; inset: 0;
+    background: black; display: flex;
+    align-items: center; justify-content: center;
+    z-index: 90;
+    pointer-events: none;
+  }
+  #loadingOverlay.hidden { opacity: 0; transition: opacity 0.5s; pointer-events: none; }
+  #loadingText { color: white; font-size: 2rem; }
+  
+
+  #head {
+    position: absolute; top: 5rem; left: 1rem;
+    color: white; pointer-events: none; z-index: 80;
+  }
+  #head .box {
+    display: flex; align-items: center; gap: .5rem;
+  }
+  .yello_dot {
+    width: 7px; height: 7px; background: yellow; border-radius: 50%;
+  }
+  
+
+  #issPopup {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8); color: #fff;
+    padding: 1rem; border-radius: .5rem;
+    z-index: 100; display: flex; flex-direction: column;
+  }
+  #issPopup.hidden { display: none; }
+  #popupClose {
+    align-self: flex-end;
+    background: none; border: none;
+    color: #fff; font-size: 1.5rem; cursor: pointer;
+  }
+  .coords { font-weight: bold; margin-bottom: .75rem; }
+  .description { line-height: 1.4; }
+  
+
+  .satellite-title {
+    position: absolute;
+    top: 1rem;              
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;              
+    color: var(--text-light);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+
+    pointer-events: none;     
+  }

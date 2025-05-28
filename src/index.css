@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  
+  --bg-dark: #0A0F2F;
+  --bg-gradient: linear-gradient(180deg, #0A0F2F 0%, #1B2138 100%);
+
+
+  --text-light: #E0E7FF;
+  --text-mid: #A0AEC0;
+  --accent-1: #00FFFA;
+
+
+ 
+  --shadow-glow: 0 0 20px rgba(0,255,250,0.5);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: var(--bg-gradient);
+  color: var(--text-light);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+h1, h2, h3, h4 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+
+
+a {
+  color: var(--accent-1);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--accent-2);
+  text-shadow: var(--shadow-glow);
+}
+
+
+
+.block {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.box {
+  height: 500px;
+  background-color: #FF6EC7;
+}
+
+.App {
+  min-height: 300vh; 
+}
+
+
+.spaced-list li {
+  margin-bottom: 1rem;  
+}
+
+
+.spaced-list li:last-child {
+  margin-bottom: 3rem;
+}

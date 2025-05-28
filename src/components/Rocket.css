@@ -1,0 +1,19 @@
+
+.rocket {
+  position: fixed;
+  right: 20px;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  color: var( --text-light);
+  z-index: 11;
+  transition: bottom 0.1s linear, transform 0.2s ease-out;
+}
+
+
+.rocket.up {
+  transform: rotate(180deg);
+}
+
+
+.rocket.down {
+  transform: rotate(0deg);
+}
