@@ -30,9 +30,10 @@
   
     width: clamp(400px, 100vw, 800px);
     height: clamp(250px, 35vh, 500px);
-    bottom: -20vh;
+   
   }
   .planet-logo {
+    top: 20px;
     max-width: 150px;
   }
 }
