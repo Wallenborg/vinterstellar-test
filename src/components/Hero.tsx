@@ -23,7 +23,6 @@ export const Hero: React.FC = () => {
 
   return (
     <section className="hero">
-      {/* Stjärnor över hela hero */}
       <div className="hero-stars">
         {stars.map((star, i) => (
           <span
@@ -39,8 +38,6 @@ export const Hero: React.FC = () => {
           />
         ))}
       </div>
-
-      {/* Själva rubriken */}
       <h1 className="hero-title">Star to Star</h1>
     </section>
   );
