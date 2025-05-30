@@ -5,6 +5,7 @@ interface Star {
   x: number;
   y: number;
   size: number;
+  delay: number;  
 }
 
 export const Hero: React.FC = () => {
@@ -14,7 +15,8 @@ export const Hero: React.FC = () => {
       Array.from({ length: 50 }, () => ({
         x: Math.random() * 100,      
         y: Math.random() * 100,     
-        size: Math.random() * 2 + 1  
+        size: Math.random() * 2 + 1,  
+        delay: Math.random() * 3,   
       })),
     []
   );
@@ -31,7 +33,8 @@ export const Hero: React.FC = () => {
               top: `${star.y}%`,
               left: `${star.x}%`,
               width: `${star.size}px`,
-              height: `${star.size}px`
+              height: `${star.size}px`,
+              animationDelay: `${star.delay}s`,
             }}
           />
         ))}

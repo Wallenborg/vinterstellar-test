@@ -24,6 +24,7 @@
     background: var(--text-light);
     border-radius: 50%;
     opacity: 0.8;
+    animation: twinkle 3s infinite ease-in-out;
   }
   
   .hero-title {
@@ -35,3 +36,14 @@
     color: var(--text-light);
   }
   
+
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0.2;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }

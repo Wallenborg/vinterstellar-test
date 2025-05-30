@@ -47,6 +47,8 @@
 
   #issPopup {
     position: absolute; top: 50%; left: 50%;
+    width: 80%;
+    max-width: 300px;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,0.8); color: #fff;
     padding: 1rem; border-radius: .5rem;
@@ -73,4 +75,17 @@
     font-size: 2rem;
 
     pointer-events: none;     
+  }
+
+  .satellite-p{
+    position: absolute;
+    top: 0.2rem;              
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;              
+    color: var(--text-light);
+   
+ 
+
+    pointer-events: none; 
   }
