@@ -28,12 +28,11 @@
 @media (max-width: 768px) {
   .planet {
     bottom: -20vh;
-    width: clamp(400px, 100vw, 800px);
-    height: clamp(250px, calc(var(--vh) * 35), 500px);
+    /* width: clamp(400px, 100vw, 800px);
+    height: clamp(250px, calc(var(--vh) * 35), 500px); */
    
   }
   .planet-logo {
-    top: 10px;
     max-width: 150px;
   }
 }
